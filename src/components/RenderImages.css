@@ -1,0 +1,23 @@
+.main-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  gap: 20px;
+}
+
+.image-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-container2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}

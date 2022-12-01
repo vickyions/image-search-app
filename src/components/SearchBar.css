@@ -1,0 +1,48 @@
+.search-bar-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: space-evenly;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  gap: 8px;
+  align-items: center;
+}
+
+.search-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #CFFDE1;
+  width: 80%;
+}
+
+.search-header h1 {
+  font-size: 32px;
+}
+
+.bookmark-btn, button {
+  color: #3D5656;
+  background-color: #CFFDE1;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.bookmark-btn:hover, button:hover {
+  background-color: #68B984;
+}
+
+button {
+  border: none;
+  margin: 5px;
+}
+
+input {
+  border: none;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 8px;
+}

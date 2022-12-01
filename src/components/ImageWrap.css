@@ -1,0 +1,28 @@
+.image-card-wrapper {
+  border-radius: 8px;
+  max-width: 400px;
+  position: relative;
+}
+
+.image-card-wrapper img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+.bookmarker {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #3D5656;
+  background-color: yellow;
+}
+
+.image-wrapper:hover + .bookmarker {
+  display: block;
+}
