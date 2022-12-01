@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import SearchBar from "./components/SearchBar";
+import RenderImages from "./components/RenderImages";
 
-const { ACCESS_KEY, SECRET_KEY } = process.env;
+const { ACCESS_KEY } = process.env;
 const page = 1;
 const per_page = 30;
 //search response {total:, total_pages, results: [{urls: {regular, raw, full, thumb,small}]
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <SearchBar setSearchHandler={(e) => setSearch(e.target.value)} />
+      <SearchBar setSearchHandler={(e) => setSearch(e.target.value)} search={search} />
       {response.results !== undefined && <RenderImages  response={response}/>}
     </div>
   );

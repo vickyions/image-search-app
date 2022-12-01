@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default function SearchBar(props) {
-  const { setSearchHandler } = props;
+  const {search, setSearchHandler } = props;
 
   return (
     <div className="search-bar-wrapper">
@@ -15,7 +15,7 @@ export default function SearchBar(props) {
           setSearchHandler(e);
         }}
       >
-        <input type="text" placeholder="search free high resolution images" />
+        <input type="text" placeholder="search free high resolution images" minLength="3" value={search}/>
         <button type="submit">Search</button>
       </form>
     </div>
